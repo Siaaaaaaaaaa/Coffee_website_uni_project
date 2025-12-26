@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotroceni History</title>
+    <link rel="stylesheet" href="CSS/stil2.css">
+</head>
+
+<body>
+
+    <script src="JS/scripturi.js"></script>
+
+    <header id="top-bar">
+        <div class="logo">
+            <img src="poze/logo_site.png" alt="SAHAR logo">
+        </div>
+
+        <nav id="navbar">
+            <ul class="pages">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pagina1.html">About Coffee</a></li>
+                <li><a href="pagina2.html">About Cotroceni</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header id="antet">
+        <h1> Cotroceni - the artists' neighborhood</h1>
+        <button id="openSurvey" class="survey-btn">Take the survey!</button>
+    </header>
+
+    <main id="content">
+
+        <h2>Let's take a virtual walk together</h2>
+
+        <p>
+            Cotroceni is one of the most historic and elegant neighborhoods in Bucharest, known for its quiet streets,
+            green spaces, and rich cultural heritage. Located in the western part of the city, Cotroceni has preserved
+            much of its architectural charm, offering a glimpse into Bucharest’s past while remaining an active and
+            vibrant urban area.
+        </p>
+
+        <p>
+            The history of Cotroceni dates back to the 17th century, when the Cotroceni Monastery was founded by Prince
+            Șerban Cantacuzino. Over time, the area developed around the monastery and later became associated with the
+            Romanian royal family. The Cotroceni Palace, built in the late 19th century, served as a royal residence and
+            is today one of the most important historical landmarks in the neighborhood.
+        </p>
+
+        <p>
+            During the late 19th and early 20th centuries, Cotroceni evolved into a residential area for intellectuals,
+            professors, and high-ranking officials. Many of the houses built during this period reflect architectural
+            styles such as Neo-Romanian, Art Nouveau, and Eclecticism, which contribute to the unique aesthetic of the
+            neighborhood. These buildings give Cotroceni a distinct identity within Bucharest.
+        </p>
+
+        <p>
+            Cotroceni holds an important place in Bucharest’s cultural life due to its academic and intellectual
+            atmosphere. The neighborhood is home to the University of Medicine and Pharmacy “Carol Davila,” as well as
+            museums, cultural institutions, and historical sites. Its calm environment and cultural significance make it
+            a favored area for artists, students, and visitors seeking a deeper understanding of the city.
+        </p>
+
+        <p>
+            Today, Cotroceni is appreciated not only for its historical importance but also for its strong sense of
+            community. Small cafés, local events, and community initiatives have transformed the neighborhood into a
+            lively cultural space, while still preserving its traditional character. This balance between history and
+            modern life makes Cotroceni an essential part of Bucharest’s cultural identity.
+        </p>
+
+        <img src="poze/poza4.jpg" alt="poza4" class="poza4"/>
+        <img src="poze/poze3.jpeg" alt="poza3" class="poza3"/>
+
+        <h3>What can we do in Cotroceni now? </h3>
+
+        <table> 
+
+            <tr>
+                <th> Place </th>
+                <th> Type </th>
+                <th> Adress </th>
+            </tr>
+
+            <tr>
+                <td>Cotroceni National Museum </td>
+                <td> Museum </td>
+                <td>Bulevardul Geniului 1 </td>
+            </tr>
+
+            <tr>
+                <td>Infinitea</td>
+                <td>Coffee & tea place </td>
+                <td>Str. Doctor Grigore Romniceau 7</td>
+            </tr>
+
+            <tr>
+                <td>Liviu Rebreanu Mmemorial Home</td>
+                <td>Museum </td>
+                <td>Bd. Prfesor Dcotr Gheorghe Marinescu 19</td>
+            </tr>
+
+            <tr>
+                <td>Bothanical Garden</td>
+                <td>Museum </td>
+                <td>Sos. Cotroceni 32</td>
+            </tr>
+
+            <tr>
+                <td>Sahar Coffee & Social Space</td>
+                <td>Coffee Place</td>
+                <td>Str. Doctor Joseph Lister 19</td>
+            </tr>
+
+            <tr>
+                <td>Throwback Coffee</td>
+                <td>Coffee Place</td>
+                <td>Str Doctor Petre Herescu 26</td>
+            </tr>
+
+            <tr>
+                <td>The Great Hill</td>
+                <td>Restaurant</td>
+                <td>Str Doctor Louis Pasteur 6</td>
+            </tr>
+        </table>
+    </main>
+
+
+<div id="surveyModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Survey regarding Cotroceni's attractions</h2>
+
+        <form id="cotroceniForm" action="PHP/save_survey.php" method="post">
+            <label>1. Have you visited Cotroceni Palace? </label>
+            <select name="q1">
+                <option value="da">Yes</option>
+                <option value="nu">No</option>
+            </select><br><br>
+
+            <label>2. Do you consider Cotroceni National museum interesting? </label>
+            <select name="q2">
+                <option value="da">Yes</option>
+                <option value="nu">No</option>
+            </select><br><br>
+
+            <label>3. Would you recommend Cotroceni neighbourhood to other people? </label>
+            <select name="q3">
+                <option value="da">Yes</option>
+                <option value="nu">No</option>
+            </select><br><br>
+
+            <button type="submit" class="survey-btn">Send</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer id="footer">
+        <div>
+            <h2>Contact</h2>
+            <p>©FSA - Applied Mathematics and Computer Science, 2025–2026</p>
+            <p>Author: Mares Anastasia Maria, 1341</p>
+        </div>
+
+        <ul>
+            <li><a href="mailto:anastasiamaria.mares@gmail.com" ><img src="poze/mail.png"/></a></li>
+            <li><a href="https://www.linkedin.com/in/anastasiamares/"><img src="poze/linkedin.png"/></a></li>
+            <li><a href="https://github.com/Siaaaaaaaaaa"><img src="poze/git.png"/></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

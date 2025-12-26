@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #9BD770;
+    color: #1f2a1f;
+    line-height: 1.6;
+}
+
+#top-bar {
+    background-color: #EBF7E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #375F1B;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #66B032;
+}
+
+#antet {
+    background-color: #66B032;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+#antet h1 {
+    font-size: 2.2rem;
+}
+
+#content {
+    padding: 40px 20%;
+}
+
+#content h2,
+#content h3 {
+    color: #375F1B;
+    margin-bottom: 15px;
+}
+
+#content h3 {
+    margin-top: 30px;
+}
+
+#content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#content ul {
+    margin-left: 20px;
+}
+
+#content li {
+    margin-bottom: 10px;
+}
+
+#footer {
+    background-color: #375F1B;
+    color: #EBF7E3;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* distanța între icoane */
+    align-items: center;
+}
+
+#footer li {
+    display: inline-block;
+}
+
+#footer a img {
+    width: 30px;       /* dimensiune standard pentru toate icoanele */
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#footer a:hover img {
+    transform: scale(1.2); /* mărire subtilă la hover */
+    filter: invert(1) brightness(1.5); /* mai luminos la hover */
+}
+
+#bgBtn {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #375F1B, #66B032);
+    color: white;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#bgBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#bgBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poza1,
+.poza2 {
+    border: 5px solid #EBF7E3;
+    margin: 25px 0;
+    display: block;
+}
+
+.poza1 {
+    width: 25%;
+    position: relative;
+    animation: oscillate 4s steps(4) infinite;
+}
+
+.poza2 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes oscillate {
+    0% { left: 0; }
+    25% { left: 25%; }
+    50% { left: 50%; }
+    75% { left: 25%; }
+    100% { left: 0; }
+}
+
+/* =====================
+   Buton Sondaj / Adaugare paragrafe
+   ===================== */
+/* Buton Sondaj – mai mic si mai la dreapta */
+#coffeeForm button.survey-btn {
+    background-color: #6f4e37;
+    color: #fff;
+    border: none;
+    padding: 8px 18px; /* mai mic */
+    margin-top: 10px;
+    margin-left: 20px; /* deplasare spre dreapta */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px; /* mai mic */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+#coffeeForm button.survey-btn:hover {
+    background-color: #a67c52;
+    transform: translateY(-2px);
+}
+
+#coffeeForm button.survey-btn:active {
+    transform: translateY(0);
+}
