@@ -31,5 +31,5 @@ All pages include a **header**, a **navigation menu**, and a **footer**. The pro
 ## How to Run
 1. Copy the project folder into `C:\xampp\htdocs\`.  
 2. Start Apache using XAMPP.  
-3. Open the website in a browser at `http://localhost/sahar/index.html`.  
+3. Open the website in a browser at `http://localhost/MaresAnastasia/index.html`.  
 4. PHP forms will work only if the Apache server is running.
